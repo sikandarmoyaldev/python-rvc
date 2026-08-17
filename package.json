@@ -1,0 +1,19 @@
+{
+    "name": "@repo/rvc",
+    "version": "0.0.1",
+    "private": true,
+    "description": "Lightweight, WebUI-free RVC inference and training engine for Manhwa Studio",
+    "scripts": {
+        "sync": "uv sync",
+        "test": "uv run pytest tests/ -v",
+        "test:integration": "cross-env RUN_INTEGRATION_TESTS=1 uv run pytest tests/test_conversion.py::TestRVCConversion -v",
+        "lint": "uv run ruff check . --fix",
+        "format": "uv run ruff format .",
+        "build": "uv build",
+        "clean": "rimraf .venv dist *.egg-info **/__pycache__"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "rimraf": "^5.0.5"
+    }
+}

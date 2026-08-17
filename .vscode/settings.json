@@ -1,0 +1,43 @@
+{
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/dist": true,
+        "**/*.pyc": true,
+        "**/*.pyo": true,
+        "**/.venv": true,
+        "**/*.log": true,
+        "**/output": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+        "**/.ruff_cache": true,
+        "**/node_modules": true,
+        "**/.pytest_cache": true,
+    },
+    "search.exclude": {
+        "**/.venv": true,
+        "**/output": true,
+        "**/uv.lock": true,
+        "**/__pycache__": true,
+        "**/.ruff_cache": true,
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "README.md": "LICENSE, *.md",
+        "converter.py": "test_*.py, *_test.py",
+        "pyproject.toml": "uv.lock, .python-version",
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.indexing": true,
+    "ruff.organizeImports": true,
+    "ruff.lint.enable": true
+}

@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Python Build & Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Python Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Node.js & pnpm
+node_modules/
+.npm/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs and Outputs
+output/
+logs/
+*.log
+
+# Models and Indices (Keep the folders, ignore the heavy files)
+assets/weights/*.pth
+assets/indices/*.index
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDE and OS
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
