@@ -6,6 +6,8 @@ Lightweight, WebUI-free RVC (Retrieval-based Voice Conversion) inference engine 
 
 ```bash
 pip install sikandarmoyaldev-rvc
+# or
+pip install git+https://github.com/sikandarmoyaldev/python-rvc.git
 ```
 
 ## 📖 Usage
