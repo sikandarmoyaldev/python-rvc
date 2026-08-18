@@ -1,7 +1,7 @@
 [project]
 name = "sikandarmoyaldev-rvc"
 version = "0.0.1"
-description = "Lightweight, WebUI-free RVC inference and training engine for Manhwa Studio"
+description = "Lightweight, WebUI-free RVC inference and training engine"
 readme = "README.md"
 requires-python = ">=3.12"
 license = {text = "MIT"}
@@ -34,15 +34,15 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sikandarmoyaldev/rvc"
-Repository = "https://github.com/sikandarmoyaldev/rvc"
+Homepage = "https://github.com/sikandarmoyaldev/python-rvc"
+Repository = "https://github.com/sikandarmoyaldev/python-rvc"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/rvc", "src/infer", "src/configs", "src/i18n"]
+packages = ["src/rvc", "src/infer", "src/configs", "src/i18n", "src/tools"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -54,6 +54,7 @@ exclude = [
     "src/configs",
     "src/i18n",
     "src/infer",
+    "src/tools",
     ".venv",
     "__pycache__",
     "node_modules",
