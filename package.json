@@ -1,6 +1,6 @@
 {
     "name": "@repo/rvc",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "private": true,
     "description": "Lightweight, WebUI-free RVC inference and training engine for Manhwa Studio",
     "scripts": {
